@@ -69,8 +69,8 @@ body {
 }
 
 .option-box {
-    width: 30%;
-    max-width: 30%;
+    width: 38%;
+    max-width: 38%;
     border-radius: 10px 100px 10px 10px;
     background: var(--neutral-dark-blue);
     padding: 40px;
@@ -102,8 +102,8 @@ body {
 }
 
 .summary-box {
-    width: 65%;
-    max-width: 65%;
+    width: 58%;
+    max-width: 58%;
     height: 75%;
     background: var(--neutral-dark-blue);
     border-radius: 10px;

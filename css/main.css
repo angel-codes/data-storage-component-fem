@@ -1,9 +1,14 @@
 :root {
-    --primary-gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
     --neutral-pale-blue: hsl(243, 100%, 93%);
     --neutral-grayish-blue: hsl(229, 7%, 55%);
     --neutral-dark-blue: hsl(228, 56%, 26%);
     --neutral-very-dark-blue: hsl(229, 57%, 11%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
 body {
@@ -11,9 +16,10 @@ body {
     font-size: 14px;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
+.bg__container {
     min-height: 100vh;
     background-color: var(--neutral-very-dark-blue);
     background-image: url(../images/bg-desktop.png);
@@ -22,7 +28,97 @@ body {
     background-size: 100% 50%;
 }
 
+.bg__flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.container {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.row__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-box {
+    width: 30%;
+    max-width: 30%;
+    border-radius: 10px 100px 10px 10px;
+    background: var(--neutral-dark-blue);
+    padding: 40px;
+}
+
+.option-box > img {
+    margin-bottom: 30px;
+}
+
+.option-box__icon__container {
+    display: flex;
+}
+
+.icon__box {
+    background: var(--neutral-very-dark-blue);
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.summary-box {
+    width: 65%;
+    max-width: 65%;
+    height: 75%;
+    background: var(--neutral-dark-blue);
+    border-radius: 10px;
+    padding: 40px;
+    align-self: flex-end;
+}
+
+.summary-box__paragraph {
+    margin: 0 0 15px 0;
+    color: #ffffff;
+}
+
+.summary-box__paragraph > span {
+    font-weight: 700;
+}
+
+.sumary-box__progress {
+    width: 100%;
+    background: var(--neutral-very-dark-blue);
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.progress__bar {
+    width: 81.5%;
+    height: 13px;
+    position: relative;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+}
+
+.progress__bar > span {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    top: .5px;
+    margin-right: 1.5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
 
 .attribution { 
     font-size: 11px; 

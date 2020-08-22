@@ -20,6 +20,7 @@ body {
 }
 
 .bg__container {
+    position: relative;
     min-height: 100vh;
     background-color: var(--neutral-very-dark-blue);
     background-image: url(../images/bg-desktop.png);
@@ -222,10 +223,13 @@ body {
 }
 
 .attribution { 
+    position: absolute;
+    bottom: 10px;
     font-size: 11px; 
     text-align: center; 
+    color: var(--neutral-pale-blue);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--neutral-grayish-blue); 
 }
